@@ -2,7 +2,8 @@ table 50000 "Item Attribute 1"
 {
     Caption = 'Item Attribute 1';
     DataClassification = ToBeClassified;
-    
+    DrillDownPageId = "Item Attribute 1 List";
+    LookupPageId = "Item Attribute 1 List";
     fields
     {
         field(1; "Item Attrib 1 Code"; Code[20])
@@ -22,5 +23,9 @@ table 50000 "Item Attribute 1"
         {
             Clustered = true;
         }
+    }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Item Attrib 1 Code", "Item Attrib 1 Desc") { }
     }
 }

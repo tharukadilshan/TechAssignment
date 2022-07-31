@@ -2,7 +2,7 @@ xmlport 50000 "Import Item Attribute 1 Data"
 {
     Caption = 'Import Item Attribute 1 Data';
     Direction = Import;
-
+    UseDefaultNamespace = true;
     schema
     {
         textelement(RootNodeName)

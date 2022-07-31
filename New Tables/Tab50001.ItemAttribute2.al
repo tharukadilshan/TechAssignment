@@ -2,6 +2,8 @@ table 50001 "Item Attribute 2"
 {
     Caption = 'Item Attribute 2';
     DataClassification = ToBeClassified;
+    DrillDownPageId = "Item Attribute 2 List";
+    LookupPageId = "Item Attribute 2 List";
 
     fields
     {
@@ -22,5 +24,10 @@ table 50001 "Item Attribute 2"
         {
             Clustered = true;
         }
+
+    }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Item Attrib 2 Code", "Item Attrib 2 Desc") { }
     }
 }

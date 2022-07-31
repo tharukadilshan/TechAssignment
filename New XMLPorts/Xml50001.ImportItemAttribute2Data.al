@@ -1,6 +1,8 @@
 xmlport 50001 "Import Item Attribute 2 Data"
 {
     Caption = 'Import Item Attribute 2 Data';
+    Direction = Import;
+    UseDefaultNamespace = true;
     schema
     {
         textelement(RootNodeName)
@@ -9,6 +11,7 @@ xmlport 50001 "Import Item Attribute 2 Data"
             {
                 fieldelement(ItemAttrib2Code; ItemAttribute2."Item Attrib 2 Code")
                 {
+
                 }
                 fieldelement(ItemAttrib2Desc; ItemAttribute2."Item Attrib 2 Desc")
                 {
